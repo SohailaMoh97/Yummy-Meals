@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+   
+   
+    <div class="container " id="search" >
+
+    </div>
+   <div class="loading position-fixed top-0 start-0 end-0 bottom-0   justify-content-center align-items-center ">
+          <i class="fa fa-spinner fa-spin fa-5x"></i>
+       </div>
+   <div class="side-menu min-vh-100 position-fixed d-flex top-0">
+       <div class="nav-tab  d-flex flex-column justify-content-between min-vh-100 py-4 px-3">
+          <div class="links  ">
+            <ul class="list-unstyled overflow-hidden">
+                <li onclick="searchMeals(); closeSide()" class="p-2 position-relative pointer ">Search</li>
+                <li onclick="getCategory(); closeSide()" class="p-2 pointer position-relative">Categories</li>
+                <li onclick="getArea(); closeSide()" class="p-2 pointer position-relative">Area</li>
+                <li onclick="getIngredients(); closeSide()" class="p-2 position-relative pointer ">Ingredients</li>
+                <li onclick="gatContact(); closeSide()" class="p-2 position-relative pointer ">Contact Us</li>
+            </ul>
+          </div>
+          <div class="nav-icons p-1">
+            <div class="icons   ">
+                <i class="fa-brands fa-facebook foot-icon   "></i>
+                <i class="fa-brands fa-twitter foot-icon "></i>
+                <i class="fa-solid fa-globe foot-icon "></i>
+            </div>
+            <div class="footer">
+               <p class="foot-icon">Copyright Â© 2019 All Rights <br>Reserved.</p>
+            </div>
+          </div>
+       </div>
+       <div class="nav-header d-flex flex-column justify-content-between py-4 px-2 text-center bg-white text-black ">
+           <img class="logo" src="img/logo.png">
+           <i class="fa-solid open-icon fa-align-justify fs-2"></i>
+           <div class="d-flex flex-column gap-2 ">
+               <i class="fa-solid fa-globe "></i>
+               <i class="fa-solid fa-share-nodes"></i> 
+           </div>
+       </div>
+   </div> 
+
+   
+   <div class="min-vh-100   position-relative">
+       <
+       <div class="container">
+          <div class="row py-5 g-4 " id="cardData">
+            
+          </div>
+       </div>
+   </div>
+   
+
+
+   
+
+    
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/style.js"></script>
+</body>
+</html>
